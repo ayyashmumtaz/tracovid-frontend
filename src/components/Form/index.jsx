@@ -37,6 +37,22 @@ const Form = () => {
         });
     }
 
+    const updateCovidProvinceData = (event) => {
+        event.preventDefault();
+        validateInput(() => {
+            const provinceIndex = provinces.findIndex((prov) => prov.kota === provinsi);
+            const provinceGetData = provinces.find((prov) => prov.kota === provinsi);
+            dispatch(updateData([provinceIndex, status, jumlah, provinceGetData]));
+            setIsFormError({
+                ...isFormError,
+                isSelectedProvinceNull: false,
+                isSelectedStatusNull: false,
+                isJumlahNull: false,
+            });
+            navigate('/provinsi');
+        });
+    };
+
     const validateInput = (callbackValidated) => {
         const checkIfSelectedProvinceIsNull = provinsi === '';
         const checkIfSelectedStatusIsNull = status === '';
@@ -105,7 +121,7 @@ const Form = () => {
 
                         <div className='form_right'>
                             <h3 className='form_title'>Form Covid</h3>
-                            <form onSubmit={updateData}>
+                            <form onSubmit={updateCovidProvinceData}>
                                 <div className='form_group'>
                                     <label htmlFor='' className='form_label'>
                                         Provinsi

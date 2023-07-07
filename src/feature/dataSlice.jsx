@@ -11,13 +11,13 @@ const dataSlice = createSlice({
             state.covid19 = action.payload;
         },
         updateData: (state, action) => {
-            state.covid19 = action.payload;
-            // return {...state, covid19: action.payload};
-    }
+            //state.covid19 = action.payload;
+            return { ...state, covid19: action.payload };
+        }
     }
 });
 
-const {addData, updateData} = dataSlice.actions;
+const { addData, updateData } = dataSlice.actions;
 const reducer = dataSlice.reducer;
-export {addData, updateData};
+export { addData, updateData };
 export default reducer;
