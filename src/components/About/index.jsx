@@ -27,6 +27,8 @@ const About = () => {
 }
 
 const AboutContainer = styled.div`
+    margin-top: 80px;
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,9 +52,9 @@ const AboutText = styled.p`
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 1rem;
-    margin-right: 15rem;
-    margin-left: 15rem;
+    margin-bottom: 4rem;
+    margin-right: 25rem;
+    margin-left: 25rem;
 `;
 
 export default About

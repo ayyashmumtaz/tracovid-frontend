@@ -8,10 +8,10 @@ const Navbar = () => {
     <Nav>
       <Logo src={LogoImg} />
       <NavMenu>
-        <NavItem><Link to="/" >Global</Link></NavItem>
-        <NavItem><Link to="/about" >About</Link></NavItem>
-        <NavItem><Link to="/provinsi" >Provinsi</Link></NavItem>
-        <NavItem><Link to="/indonesia" >Indonesia</Link></NavItem>
+        <NavItem><Link to="/" >GLOBAL</Link></NavItem>
+        <NavItem><Link to="/about" >ABOUT</Link></NavItem>
+        <NavItem><Link to="/provinsi" >PROVINSI</Link></NavItem>
+        <NavItem><Link to="/indonesia" >INDONESIA</Link></NavItem>
       </NavMenu>
     </Nav>
   );
@@ -19,7 +19,12 @@ const Navbar = () => {
 
 // Style untuk komponen navbar
 const Nav = styled.nav`
-    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
     font-family: 'Questrial', sans-serif;
     background: #06D6A0;
     height: 60px;
@@ -27,14 +32,13 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    border-radius: 20px;
     padding: 10px;
   `;
 
 const Logo = styled.img`
   padding-left: 10px;
 
-    width: 100px;
+    width: 200px;
     
   `;
 
