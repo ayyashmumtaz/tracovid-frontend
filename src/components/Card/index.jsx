@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Card = (props) => {
-    console.log(props.total);
+    //console.log(props.total);
     return (<div>
         <CardData>
             <CardHeader>

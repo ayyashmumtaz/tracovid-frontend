@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 const CardRegion = (props) => {
-    console.log(props.total);
+    console.log(props);
     return (<div>
         <CardData>
             <CardHeader>
-                <h2>{props.status}</h2>
-                <h3>{props.total}</h3>
+                <h4>{props.region}</h4>
+                <h5>Confirmed : {props.confirmed}</h5>
+                <h5>Recovered : {props.recovered}</h5>
+                <h5>Death : {props.death}</h5>
             </CardHeader>
         </CardData>
     </div>)
@@ -15,7 +17,7 @@ const CardRegion = (props) => {
 const CardData = styled.div`
     background-color: #9BE8D8;  
     border: solid transparent; 
-    width: 200px;
+    margin-bottom: 2rem;
     margin-left:4rem;
     border: 0;
     border-radius: 20px;
