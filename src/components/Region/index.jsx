@@ -11,7 +11,7 @@ const Region = () => {
         </div>
 
         <Card/>
-        <Card/>
+        
         </RegionStyle>
     )
 }
