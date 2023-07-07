@@ -7,10 +7,18 @@ const About = () => {
                 <AboutContent>
                     <AboutTitle>About</AboutTitle>
                     <AboutText>
-                        This is a simple website that displays the number of cases of Covid-19 in Indonesia and the provinces in Indonesia.
+                        Ucapan Terima Kasih dan Selamat Menggunakan Aplikasi Tracovid!
+                        Kami ingin mengucapkan terima kasih yang sebesar-besarnya kepada Kak Aufa Billah, atas bimbingannya dalam mengajari saya Frontend.
+                        Dengan aplikasi Tracovid yang hebat ini, kami berharap dapat memberikan bantuan dan informasi yang berguna dalam melacak dan memantau situasi Covid-19. Aplikasi ini dirancang dengan cermat dan dilengkapi dengan fitur-fitur yang berguna untuk membantu melindungi kesehatan dan keamanan kita semua.
+                        Kami berterima kasih atas dedikasi dan kerja keras Anda dalam mengembangkan aplikasi ini. Semoga aplikasi Tracovid ini dapat memberikan manfaat yang besar bagi pengguna di seluruh dunia.
+                        Selamat menggunakan aplikasi Tracovid! Dengan menggunakan aplikasi ini, mari kita tetap waspada, menjaga kesehatan, dan saling peduli untuk memutus rantai penyebaran Covid-19.
+                        Terima kasih dan semoga kesuksesan selalu menyertai perjalanan Anda!
+
+
                     </AboutText>
                     <AboutText>
-                        This website is made using React JS and styled-components.
+                        Best Regards,
+                        <strong> Ayyash Mumtaz Hafidz, Mahasiswa TI 01 NIM 0110221032</strong>
                     </AboutText>
                 </AboutContent>
             </AboutContainer>
@@ -39,10 +47,12 @@ const AboutTitle = styled.h1`
 `;
 
 const AboutText = styled.p`
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 1rem;
+    margin-right: 15rem;
+    margin-left: 15rem;
 `;
 
 export default About

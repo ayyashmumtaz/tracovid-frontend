@@ -33,9 +33,9 @@ const RegionStyle = styled.div`
     font-family: 'Poppins', sans-serif;
     justify-content:center;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: repeat(3, 0.1fr) ;
+    grid-gap: 10px;
     margin-left:1rem;
-    margin-bottom:10rem;
     text-transform: uppercase;
 }
 

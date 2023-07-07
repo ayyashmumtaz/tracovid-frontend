@@ -43,7 +43,8 @@ font-family: 'Questrial', sans-serif;
     border: 0;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 20px 20px 20px 20px
+    padding: 10px 20px 20px 20px
+    
 }
 
 .labelCovid{
