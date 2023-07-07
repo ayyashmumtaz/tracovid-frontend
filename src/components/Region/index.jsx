@@ -22,17 +22,15 @@ const Region = () => {
 }
 
 const RegionStyle = styled.div`
-
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 .judulReg{
    
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     text-align: center;
 }
 
 .card_hey {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     justify-content:center;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -42,7 +40,7 @@ const RegionStyle = styled.div`
 }
 
 .centeredText{
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     margin-bottom:5rem;
 }

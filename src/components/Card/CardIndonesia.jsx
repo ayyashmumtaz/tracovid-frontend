@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-const Card = (props) => {
-    //console.log(props.total);
+const CardIndonesia = (props) => {
+    console.log(props);
     return (<div>
         <CardData>
             <CardHeader>
-
-                <h2>{props.status}</h2>
-                <h4>{props.total.toLocaleString()}</h4>
+                <h2>{props.statusIndo}</h2>
+                <h4>{props.totalIndo.toLocaleString()}</h4>
             </CardHeader>
         </CardData>
     </div>)
@@ -33,4 +32,4 @@ const CardHeader = styled.div`
 
 
 
-export default Card;
+export default CardIndonesia;

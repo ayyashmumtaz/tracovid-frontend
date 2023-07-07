@@ -8,7 +8,7 @@ const Navbar = () => {
     <Nav>
       <Logo src={LogoImg} />
       <NavMenu>
-        <NavItem><Link to="/" >Home</Link></NavItem>
+        <NavItem><Link to="/" >Global</Link></NavItem>
         <NavItem><Link to="/about" >About</Link></NavItem>
         <NavItem><Link to="/provinsi" >Provinsi</Link></NavItem>
         <NavItem><Link to="/indonesia" >Indonesia</Link></NavItem>

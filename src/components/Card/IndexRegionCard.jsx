@@ -13,14 +13,13 @@ const CardRegion = (props) => {
                 <p className="titleRegion">{props.region}</p>
                 <Image src="https://img.icons8.com/ios/50/protection-mask.png" alt="image" />
                 <p className="labelCovid">Confirmed</p>
-
-                <p className="isiCovid">{props.confirmed.toLocaleString()}</p>
+                <p className="isiConfirmedCovid">{props.confirmed.toLocaleString()}</p>
                 <Image src="https://img.icons8.com/ios/50/trust--v1.png" alt="image" />
                 <p className="labelCovid">Recovered</p>
-                <p className="isiCovid">{props.recovered.toLocaleString()}</p>
+                <p className="isiRecoveredCovid">{props.recovered.toLocaleString()}</p>
                 <Image src="https://img.icons8.com/ios/50/skull.png" alt="image" />
                 <p className="labelCovid">Death</p>
-                <p className="isiCovid">{props.death.toLocaleString()}</p>
+                <p className="isiDeathCovid">{props.death.toLocaleString()}</p>
             </CardHeader>
         </CardData>
     </div>)
@@ -69,7 +68,22 @@ margin-bottom: 0px;
     margin-bottom: 3rem;
 };
 
-.isiCovid{
+.isiConfirmedCovid{
+    color: #06D6A0;
+    font-family: 'Questrial', sans-serif;
+    margin-top: 0px;
+    font-size: 20px;
+};
+
+.isiRecoveredCovid{
+    color: #118AB2;
+    font-family: 'Questrial', sans-serif;
+    margin-top: 0px;
+    font-size: 20px;
+};
+
+.isiDeathCovid{
+    color: red;
     font-family: 'Questrial', sans-serif;
     margin-top: 0px;
     font-size: 20px;
