@@ -29,7 +29,6 @@ const Image = styled.img`
     width: 30px;
     display: flex;
     float: right;
-
 `;
 
 const CardData = styled.div`
