@@ -1,12 +1,17 @@
 import styled from "styled-components";
+import CurrentDate from "../CurrentDate";
+import Card from "../Card";
 
 const Region = () => {
     return (
         <RegionStyle>
         <div>
             <h1 className="judulReg">Situation by Regions</h1>
-            <p className="centeredText">Updated : </p>
+            <p className="centeredText">Updated :<CurrentDate /> </p>
         </div>
+
+        <Card/>
+        <Card/>
         </RegionStyle>
     )
 }
