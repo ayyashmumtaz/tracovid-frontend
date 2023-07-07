@@ -32,7 +32,7 @@ const RegionStyle = styled.div`
 }
 
 .card_hey {
-   
+    font-family: 'Questrial', sans-serif;
     justify-content:center;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -42,6 +42,7 @@ const RegionStyle = styled.div`
 }
 
 .centeredText{
+    font-family: 'Questrial', sans-serif;
     text-align: center;
     margin-bottom:5rem;
 }

@@ -19,11 +19,8 @@ const CardData = styled.div`
     margin-left:5rem;
     border: 0;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 10px 10px 10px
-    box-shadow: 0px 10px 55px -2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 10px 55px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 10px 55px -2px rgba(0,0,0,0.75);;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 `;
 

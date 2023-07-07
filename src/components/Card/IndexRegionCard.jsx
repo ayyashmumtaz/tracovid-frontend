@@ -1,38 +1,73 @@
 import styled from "styled-components";
 
+
+
+
 const CardRegion = (props) => {
+
+
     console.log(props);
     return (<div>
         <CardData>
             <CardHeader>
-                <h4>{props.region}</h4>
-                <h5>Confirmed : {props.confirmed}</h5>
-                <h5>Recovered : {props.recovered}</h5>
-                <h5>Death : {props.death}</h5>
+                <p className="titleRegion">{props.region}</p>
+                <p className="labelCovid">Confirmed</p>
+                <p className="isiCovid">{props.confirmed.toLocaleString()}</p>
+                <p className="labelCovid">Recovered</p>
+                <p className="isiCovid">{props.recovered.toLocaleString()}</p>
+                <p className="labelCovid">Death</p>
+                <p className="isiCovid">{props.death.toLocaleString()}</p>
             </CardHeader>
         </CardData>
     </div>)
 };
 
 const CardData = styled.div`
-    background-color: #9BE8D8;  
+font-family: 'Questrial', sans-serif;
+    background-color: #FFF;  
     border: solid transparent; 
     margin-bottom: 2rem;
     margin-left:4rem;
+    margin-right:4rem;
+    width: 350px;
     border: 0;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px 10px 10px 10px
-    box-shadow: 0px 10px 55px -2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 10px 55px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 10px 55px -2px rgba(0,0,0,0.75);;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 20px 20px 20px
 }
+
+.labelCovid{
+color: var(--gray-color, #64748B);
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 0px;
+};
+
+.titleRegion{
+    font-family: 'Questrial', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+};
+
+.isiCovid{
+    font-family: 'Questrial', sans-serif;
+    margin-top: 0px;
+    font-size: 20px;
+};
 `;
 
 const CardHeader = styled.div`
     font-family: 'Questrial', sans-serif;
     padding: 10px 10px 10px 10px;
-    text-align: center;
+    
 `;
 
 
