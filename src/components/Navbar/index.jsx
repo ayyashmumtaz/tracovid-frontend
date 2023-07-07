@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import LogoImg from '../../assets/logo.png';
 
 const Navbar = () => {
     return (
       <Nav>
-        <Logo href="/">Logo</Logo>
+        <Logo src={LogoImg}/> 
         <NavMenu>
           <NavItem href="/">Home</NavItem>
           <NavItem href="/about">About</NavItem>
@@ -25,22 +26,29 @@ const Navbar = () => {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
+    border-radius: 20px;
+    padding: 10px;
   `;
   
-  const Logo = styled.a`
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
+  const Logo = styled.img`
+  padding-left: 10px;
+
+    width: 100px;
+    
   `;
   
   const NavMenu = styled.div`
     display: flex;
     align-items: center;
+    padding-right: 50px;
+
   `;
   
   const NavItem = styled.a`
     color: #fff;
-    margin-left: 1.5rem;
+    font-weight: 600;
+    font-family: 'Questrial', sans-serif;
+    margin-left: 1.8rem;
     text-decoration: none;
   `;
   

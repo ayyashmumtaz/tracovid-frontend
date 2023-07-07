@@ -23,13 +23,13 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-margin: 9rem 9rem 9rem 20rem;
+margin: 9rem 9rem 9rem 12rem;
 font-family: 'Questrial', sans-serif;
   flex: 1;
 `;
 
 const Image = styled.img`
-margin: 9rem 15rem 9rem 1rem;
+margin: 9rem 10rem 9rem 1rem;
   max-width: 30%;
     height: auto;
 `;
