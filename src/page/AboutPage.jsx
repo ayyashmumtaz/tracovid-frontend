@@ -1,9 +1,18 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import About from "../components/About";
+
 const AboutPage = () => {
     return (
-        <div>
-        <h1>About Page</h1>
-        </div>
+        <>
+            <Navbar />
+
+            <About />
+            <Footer />
+        </>
+
     );
-    }
+}
 
 export default AboutPage;

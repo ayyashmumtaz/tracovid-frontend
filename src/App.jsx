@@ -13,17 +13,17 @@ function App() {
 
   return (
     <Provider store={store}>
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/indonesia" element={<IndonesiaPage />} />
-      <Route path="/provinsi" element={<ProvinsiPage />} />
-    </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/indonesia" element={<IndonesiaPage />} />
+          <Route path="/provinsi" element={<ProvinsiPage />} />
+        </Routes>
+      </BrowserRouter>
     </Provider>
   );
-  
+
 }
 
 export default App

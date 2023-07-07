@@ -1,9 +1,16 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+
 const IndonesiaPage = () => {
     return (
-        <div>
-        <h1>IndonesiaPage</h1>
-        </div>
+        <>
+            <Navbar />
+            <Hero />
+
+            <Footer />
+        </>
     );
-    }
+}
 
 export default IndonesiaPage;

@@ -11,7 +11,8 @@ const dataSlice = createSlice({
             state.covid19 = action.payload;
         },
         updateData: (state, action) => {
-            return {...state, covid19: action.payload};
+            state.covid19 = action.payload;
+            // return {...state, covid19: action.payload};
     }
     }
 });

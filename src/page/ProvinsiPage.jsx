@@ -1,9 +1,14 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 const ProvinsiPage = () => {
     return (
-        <div>
-        <h1>ProvinsiPage</h1>
-        </div>
+        <>
+            <Navbar />
+            <Hero />
+            <Footer />
+        </>
     );
-    }
+}
 
 export default ProvinsiPage;

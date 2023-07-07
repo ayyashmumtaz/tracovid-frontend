@@ -11,13 +11,12 @@ import { useDispatch } from "react-redux";
 
 const Homepage = () => {
     const dispatch = useDispatch();
-const getGlobalData = async () => {
-    const response = await axios.get("https://covid-fe-2023.vercel.app/api/global.json"); 
-    dispatch(updateData(response.data.global));
-};
-
-
-useEffect(() => {getGlobalData()}, []);
+    const getGlobalData = async () => {
+        const response = await axios("https://covid-fe-2023.vercel.app/api/global.json");
+        const globalData = response.data;
+        dispatch(updateData(globalData));
+    };
+    useEffect(() => { getGlobalData() }, []);
     return (
         <div>
             <Navbar />
@@ -27,6 +26,6 @@ useEffect(() => {getGlobalData()}, []);
             <Footer />
         </div>
     );
- };
+};
 
 export default Homepage;

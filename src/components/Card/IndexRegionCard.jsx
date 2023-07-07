@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-const Card = (props) => {
+const CardRegion = (props) => {
     console.log(props.total);
     return (<div>
         <CardData>
             <CardHeader>
                 <h2>{props.status}</h2>
-                <h4>{props.total}</h4>
+                <h3>{props.total}</h3>
             </CardHeader>
         </CardData>
     </div>)
@@ -15,8 +15,8 @@ const Card = (props) => {
 const CardData = styled.div`
     background-color: #9BE8D8;  
     border: solid transparent; 
-    width: 250px;
-    margin-left:5rem;
+    width: 200px;
+    margin-left:4rem;
     border: 0;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -35,4 +35,4 @@ const CardHeader = styled.div`
 
 
 
-export default Card;
+export default CardRegion;
