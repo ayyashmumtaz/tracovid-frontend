@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 const Table = () => {
     const provinsiData = useSelector((state) => state.covid19.covid19.regions) ?? [];
-    console.log(provinsiData);
+    //console.log(provinsiData);
     return (<div>
         <div><TitleTable>Situation by Provinsi</TitleTable></div>
         <TableData>
@@ -22,10 +22,10 @@ const Table = () => {
                 {provinsiData.map((item, index) => (
                     <tr key={index}>
                         <td>{item.name}</td>
-                        <td>{item.numbers.confirmed.toLocaleString()}</td>
-                        <td>{item.numbers.recovered.toLocaleString()}</td>
-                        <td>{item.numbers.treatment.toLocaleString()}</td>
-                        <td>{item.numbers.death.toLocaleString()}</td>
+                        <td>{item.numbers.confirmed}</td>
+                        <td>{item.numbers.recovered}</td>
+                        <td>{item.numbers.treatment}</td>
+                        <td>{item.numbers.death}</td>
                     </tr>
                 ))}
             </tbody>
