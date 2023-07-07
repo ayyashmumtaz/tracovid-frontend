@@ -11,16 +11,27 @@ const CardRegion = (props) => {
         <CardData>
             <CardHeader>
                 <p className="titleRegion">{props.region}</p>
+                <Image src="https://img.icons8.com/ios/50/protection-mask.png" alt="image" />
                 <p className="labelCovid">Confirmed</p>
+
                 <p className="isiCovid">{props.confirmed.toLocaleString()}</p>
+                <Image src="https://img.icons8.com/ios/50/trust--v1.png" alt="image" />
                 <p className="labelCovid">Recovered</p>
                 <p className="isiCovid">{props.recovered.toLocaleString()}</p>
+                <Image src="https://img.icons8.com/ios/50/skull.png" alt="image" />
                 <p className="labelCovid">Death</p>
                 <p className="isiCovid">{props.death.toLocaleString()}</p>
             </CardHeader>
         </CardData>
     </div>)
 };
+
+const Image = styled.img`
+    width: 30px;
+    display: flex;
+    float: right;
+
+`;
 
 const CardData = styled.div`
 font-family: 'Questrial', sans-serif;
@@ -55,6 +66,7 @@ margin-bottom: 0px;
     letter-spacing: 0em;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 3rem;
 };
 
 .isiCovid{
