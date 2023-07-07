@@ -17,8 +17,9 @@ const Region = () => {
 }
 
 const RegionStyle = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 .judulReg{
-    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+   
     font-family: 'Questrial', sans-serif;
     font-size: 40px;
     text-align: center;
