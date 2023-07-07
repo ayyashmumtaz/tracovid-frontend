@@ -4,9 +4,7 @@ import styled from "styled-components";
 
 
 const CardRegion = (props) => {
-
-
-    console.log(props);
+    //console.log(props);
     return (<div>
         <CardData>
             <CardHeader>

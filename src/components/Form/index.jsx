@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { styled } from "styled-components";
 import gbrForm from "../../assets/form.svg";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,8 +7,8 @@ import { updateData } from "../../feature/dataSlice";
 
 
 const Form = () => {
-    const provinces = useSelector((store) => store.covid19.covid19.provinces);
-    //console.log(provinces);
+    const provinces = useSelector((store) => store.covid19.covid19.provinces) ?? [];
+    console.log(provinces);
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
@@ -95,24 +95,6 @@ const Form = () => {
         }
     }
 
-    const updateCovidProvinceData = (event) => {
-        event.preventDefault();
-        validateInput(() => {
-            // find province data
-            const provinceIndex = provinces.findIndex((prov) => prov.kota === provinsi);
-            const provinceGetData = provinces.find((prov) => prov.kota === provinsi);
-
-            dispatch(updateData([provinceIndex, status, jumlah, provinceGetData]));
-            // reset validation state
-            setIsFormError({
-                ...isFormError,
-                isSelectedProvinceNull: false,
-                isSelectedStatusNull: false,
-                isJumlahNull: false,
-            });
-            navigate('/provinsi');
-        });
-    };
 
     return (
         <>
@@ -183,7 +165,7 @@ const Form = () => {
         </>
 
     )
-}
+};
 
 const StyledAddForm = styled.div`
 	margin: 4rem 2rem 4rem 2rem;
