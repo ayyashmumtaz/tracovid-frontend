@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const GlobalIndonesia = () => {
     const dataFetch = useSelector((state) => state.covid19.covid19.indonesia) ?? [];
-    console.log(dataFetch);
+    //console.log(dataFetch);
     return (
         <GlobalStyle>
             <div>

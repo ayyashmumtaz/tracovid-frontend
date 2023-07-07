@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const CardIndonesia = (props) => {
-    console.log(props);
+    // console.log(props);
     return (<div>
         <CardData>
             <CardHeader>

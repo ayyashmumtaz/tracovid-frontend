@@ -1,38 +1,64 @@
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 
-const Table = (props) => {
-    console.log(props.totalIndo);
+
+const Table = () => {
+    const provinsiData = useSelector((state) => state.covid19.covid19.regions) ?? [];
+    console.log(provinsiData);
     return (<div>
-        <div><h1>Situation by Provinsi</h1></div>
+        <div><TitleTable>Situation by Provinsi</TitleTable></div>
         <TableData>
-            <TableHeader>
-
-                <h2>{props.statusIndo}</h2>
-                <h4>{props.totalIndo}</h4>
-            </TableHeader>
+            <thead>
+                <tr>
+                    <th>Provinsi</th>
+                    <th>Positif</th>
+                    <th>Sembuh</th>
+                    <th>Dirawat</th>
+                    <th>Meninggal</th>
+                </tr>
+            </thead>
+            <tbody>
+                {provinsiData.map((item, index) => (
+                    <tr key={index}>
+                        <td>{item.name}</td>
+                        <td>{item.numbers.confirmed.toLocaleString()}</td>
+                        <td>{item.numbers.recovered.toLocaleString()}</td>
+                        <td>{item.numbers.treatment.toLocaleString()}</td>
+                        <td>{item.numbers.death.toLocaleString()}</td>
+                    </tr>
+                ))}
+            </tbody>
         </TableData>
+
     </div>)
 };
 
-const TableData = styled.div`
-   justify-content:center;
-    border: solid transparent;
-    width: 250px;
-    margin-left:5rem;
-    border: 0;
-  
-}
-h1 {
+
+
+const TitleTable = styled.h1`
     text-align:center;
     margin-top:1rem;
     margin-bottom:4rem;
-}
 `;
 
-const TableHeader = styled.div`
+const TableData = styled.table`
     font-family: 'Questrial', sans-serif;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:5rem;
+    margin-right:5rem;
+    margin-bottom:10rem;
+    text-transform: uppercase;
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
 `;
+
+
 export default Table;
